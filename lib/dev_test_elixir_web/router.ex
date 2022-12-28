@@ -21,9 +21,11 @@ defmodule DevTestElixirWeb.Router do
   end
 
   # Other scopes may use custom stacks.
-  # scope "/api", DevTestElixirWeb do
-  #   pipe_through :api
-  # end
+  scope "/api", DevTestElixirWeb do
+    pipe_through :api
+
+    resources "/cars", CarController, only: [:index, :show]
+  end
 
   # Enables LiveDashboard only for development
   #
