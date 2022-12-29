@@ -5,3 +5,4 @@
 *.css		text eol=lf
 *.txt		text eol=lf
 *.bat		text eol=lf
+*.config	text eol=lf
