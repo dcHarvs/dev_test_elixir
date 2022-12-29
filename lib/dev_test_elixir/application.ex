@@ -8,8 +8,6 @@ defmodule DevTestElixir.Application do
   @impl true
   def start(_type, _args) do
     children = [
-      # Start the Ecto repository
-      # DevTestElixir.Repo, -- no Ecto Needed
       # Start the Telemetry supervisor
       DevTestElixirWeb.Telemetry,
       # Start the PubSub system
