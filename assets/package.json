@@ -1,8 +1,12 @@
 {
+  "name": "assets",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-modal": "^3.16.1",
     "react-select": "^5.7.0"
+  },
+  "scripts": {
+    "deploy": "cd .. && mix assets.deploy && rm -f _build/esbuild*"
   }
 }
