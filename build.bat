@@ -6,6 +6,9 @@ set MIX_ENV=prod
 call mix compile
 
 ::compile assets
+cd assets
+call npm install
+cd ..
 call mix assets.deploy
 
 ::cleanup
