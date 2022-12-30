@@ -1,19 +1,12 @@
 # DevTestElixir
 
-To start your Phoenix server:
+Build and run the project in Production:
 
   * Install dependencies with `mix deps.get`
-  * Create and migrate your database with `mix ecto.setup`
-  * Start Phoenix endpoint with `mix phx.server` or inside IEx with `iex -S mix phx.server`
+  * Run `build.bat`
+  * Set mix environment to production with `SET MIX_ENV=prod`
+  * Start Phoenix endpoint with `mix phx.server`
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+Now you can visit `localhost:4000` from your browser.
 
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
-
-## Learn more
-
-  * Official website: https://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Forum: https://elixirforum.com/c/phoenix-forum
-  * Source: https://github.com/phoenixframework/phoenix
+> **NOTE**: If port `4000` isn't available, you can set it with `SET PORT=YOUR_PORT`.
